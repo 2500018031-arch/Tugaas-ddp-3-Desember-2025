@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int pangkat(int a, int b) {
+    if (b == 0)
+        return 1;
+    return a * pangkat(a, b - 1);
+}
+
+int main() {
+    int a, b;
+
+    cout << "======= PERPANGKATAN =======" << endl;
+    cout << "|| Masukkan basis    : ";
+    cin >> a;
+    cout << "|| Masukkan eksponen : ";
+    cin >> b;
+
+    cout << "|| Hasil: " << pangkat(a, b) << endl;
+    cout << "============================" << endl;
+
+    return 0;
+}
